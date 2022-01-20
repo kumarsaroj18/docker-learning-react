@@ -2,14 +2,14 @@ name: test_and_publish
 
 on:
   push:
-    branches: [ mainline ]
-  pull_request:
-    branches: [ mainline ]
+    branches:
+      - master
 
 jobs:
 
   build:
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
