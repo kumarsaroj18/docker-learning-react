@@ -35,8 +35,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: learn-github-actions
-          environment_name: Learngithubactions-env
-          version_label: "learn-github-actions-${{ steps.format-time.outputs.replaced }}"
+          application_name: learning-github-actions
+          environment_name: Learninggithubactions-env
+          version_label: "learning-github-actions-${{ steps.format-time.outputs.replaced }}"
           region: us-east-1
           deployment_package: deploy.zip
