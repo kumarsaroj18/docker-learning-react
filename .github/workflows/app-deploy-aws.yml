@@ -1,4 +1,4 @@
-name: Build Application Image
+name: Build & Deploy Application Image
 
 on:
   workflow_run:
