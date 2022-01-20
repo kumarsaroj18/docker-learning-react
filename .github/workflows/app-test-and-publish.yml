@@ -1,4 +1,4 @@
-name: Docker test and publish to registry
+name: test_and_publish
 
 on:
   push:
