@@ -1,9 +1,10 @@
 name: Deploy to AWS
 
 on:
-  push:
-    branches:
-      - mainline
+  workflow_run:
+    workflows: [ test_and_publish ]
+    types:
+      - completed
 
 jobs:
 
